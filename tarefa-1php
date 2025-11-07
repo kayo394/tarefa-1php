@@ -1,0 +1,28 @@
+<?php
+
+    $erros;
+    $certo;
+
+    echo 'Você terar que acerta um número de 1 até 10 só vai poder errar 5 vezes';
+
+    while($erros <= 5){
+    
+        $sorteio = rand( 1,10);
+
+        $numerosorteado = readline ('Informe o número! '.'\n');
+                if($num == $sorteio){
+                    echo 'voce acertou\n';
+                    $certo = $certo + 1;
+                    if($certo = 1){
+                        echo 'Você acertou!\n';
+                        break;
+                    }
+                }else{
+                    echo 'Você errou!\n';
+                    $erros = $erros + 1;
+                    if($erros == 5){
+                        echo 'Nossa que azar!kkk';
+                        break;
+                    }
+                }
+    }
